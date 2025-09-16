@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Full Image Page</title>
+  <title>Design</title>
   <style>
-    img.fullscreen {
-      width: 100%;
+    html, body {
       height: 100%;
-      -webkit-user-drag: none;
+      margin: 0;
+    }
+    img.fullscreen {
+        width: 100%;
+      display: block;
+      object-fit: cover;
+       -webkit-user-drag: none;
       user-select: none;
       pointer-events: none; /* Prevent right-click or drag */
     }
   </style>
 </head>
-<body oncontextmenu="return false;">
+<body>
   <img class="fullscreen" src="images.png" alt="Full screen image" />
 </body>
 </html>
